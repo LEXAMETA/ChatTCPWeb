@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "ChatTCPWeb",
+    "slug": "chattcpweb",
+    "version": "1.0.2",
+    "platforms": ["web"],
+    "web": {
+      "output": "static",
+      "bundler": "metro"
+    }
+  }
+}
