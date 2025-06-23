@@ -1,6 +1,6 @@
 // lib/tcp-client.ts
 import TcpSocket from 'react-native-tcp-socket';
-import { deflate, inflate } from 'zlib';
+import { deflate, inflate } from 'node:zlib'; // Use built-in Node.js zlib
 import { promisify } from 'util';
 
 const deflateAsync = promisify(deflate);
