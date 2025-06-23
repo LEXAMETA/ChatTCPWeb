@@ -4,9 +4,9 @@
       "src": "package.json",
       "use": "@vercel/static",
       "config": {
-        "buildCommand": "npm run web:build",
-        "outputDirectory": "web-build",
-        "installCommand": "npm install"
+        "installCommand": "npm install --no-cache",
+        "buildCommand": "npm run web:build && npm run postbuild",
+        "outputDirectory": "web-build"
       }
     }
   ],
