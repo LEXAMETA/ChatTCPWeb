@@ -1,5 +1,6 @@
+// package.json
 {
-  "name": "chattcp-web",
+  "name": "chattcpweb",
   "version": "1.0.2",
   "scripts": {
     "start": "expo start --web",
