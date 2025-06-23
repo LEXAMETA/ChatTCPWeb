@@ -2,13 +2,17 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/node"
+      "use": "@vercel/static",
+      "config": {
+        "buildCommand": "npm run web:build",
+        "outputDirectory": "web-build"
+      }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/index.html"
     }
   ]
 }
